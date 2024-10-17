@@ -1,5 +1,6 @@
 import './App.css'
 import Button from './Components/common/Button'
+import CommonCard from './Components/common/CommonCard'
 function App() {
  
 
@@ -7,9 +8,9 @@ function App() {
     <>
 
 
-<Button className='m-5'>
-Cypher AI
-</Button>
+<CommonCard>
+
+</CommonCard>
         
       </>
   )
