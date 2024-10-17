@@ -33,6 +33,6 @@ export const CardData = [
         image: "/Card-6.png",
         Title: "Tulare County",
         Des: "Tulare County,  Los Angles, CA 23415",
-        Money: "$1,456,654.00",
+        Money: "$1,456,654.00"
     },
 ]
