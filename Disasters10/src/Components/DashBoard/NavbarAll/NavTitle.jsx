@@ -1,7 +1,8 @@
 import React from 'react'
 import DashContainer from '../../common/DashContainer'
 import Button from '../../common/Button'
-function NavTitle({P,H,B}) {
+import { useNavigate } from "react-router-dom";
+function NavTitle({P,H,B,NextClick}) {
   return (
     <div>
         <DashContainer className='font-onest grid justify-center place-items-center md:flex md:justify-between items-center px-5 bg-[#E4E4E780] '>
@@ -19,7 +20,7 @@ function NavTitle({P,H,B}) {
                     <p className='text-[12px] text-primary bg-[#FAFAFA]  p-2  rounded-[6px]'>Sort By: Date modified</p>
                 </div>
 
-                <Button>{B}</Button>
+                <Button onClick={NextClick}>{B}</Button>
                 
             </div>
         </DashContainer>
