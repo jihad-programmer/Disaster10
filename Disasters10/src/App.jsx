@@ -5,6 +5,7 @@ import Locations from './Components/DashBoard/NavbarAll/Locations'
 import Nav from './Components/DashBoard/NavbarAll/Nav'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import FirstPage from './Components/Incidents/FirstPage'
+import SecondPage from './Components/Incidents/SecondPage'
 function App() {
  
 
@@ -14,11 +15,13 @@ function App() {
     <Nav/>
      <Routes>
 
-         {/* <Route path='/' element={ <DashBoard/> }/>
+         <Route path='/' element={ <DashBoard/> }/>
           <Route path='/DashBoard' element={ <DashBoard/> }/>
-         <Route path='/Incident' element={ <Incident/>}/> */}
+         <Route path='/Incident' element={ <Incident/>} />
+        
          <Route path='/FirstPage' element={ <FirstPage/> }/>
-
+          
+         <Route path='/SecondPage' element={ <SecondPage/> }/>
       
          
      </Routes>

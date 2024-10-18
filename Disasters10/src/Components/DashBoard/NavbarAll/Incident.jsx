@@ -7,16 +7,16 @@ import { useNavigate } from "react-router-dom";
 import FirstPage from '../../Incidents/FirstPage'
 function Incident() {
 
-  const navigate = useNavigate();
-  const handle = () =>(
-    navigate("Incidents/FirstPage")
-  )
+//   const navigate = useNavigate();
+//   const NextClick = () => {
+//     navigate('/FirstPage');
+// }
   return (
    
     <div>
-        <NavTitle P='Home - Incidents' H='Incidents' B='+New Incident' NextClick={handle}/>
+        <NavTitle P='Home - Incidents' H='Incidents' B='+New Incident'/>
         <DashContainer>
-        <div  className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 p-4 ">
+        <div  className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 p-4">
        
                 
        {CardData.map( (Data,i)=> (

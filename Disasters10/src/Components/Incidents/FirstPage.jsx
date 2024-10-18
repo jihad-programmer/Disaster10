@@ -2,6 +2,8 @@ import React from 'react'
 import Button from '../common/Button'
 import { FirstPageData } from '../../lib/Db'
 import FirstPageCard from './FirstPageCard'
+import { NavLink } from 'react-router-dom'
+import SecondPage from './SecondPage'
 function FirstPage() {
   return (
     <>
@@ -30,7 +32,9 @@ function FirstPage() {
   
 
    <div className='w-[100%] my-[100px] md:my-[140px]'>
-            <Button className='md:ms-[46%]'>Get started</Button>
+    <NavLink to={'/SecondPage'}> <Button className='md:ms-[46%]'>Get started</Button>   </NavLink>         
+    
+                
         </div>
     
     </>

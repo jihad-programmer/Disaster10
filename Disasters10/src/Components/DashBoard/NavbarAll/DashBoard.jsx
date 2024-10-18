@@ -4,11 +4,13 @@ import {CardData} from '../../../lib/Db/index'
 import CommonCard from '../../common/CommonCard'
 import { IoClose } from "react-icons/io5"
 import NavTitle from './NavTitle'
+import Button from '../../common/Button'
+import ChatBox from './ChatBox'
 
 function DashBoard() {
 
   const [chatOpen, setChatOpen] = useState(false);
-  const handleChat = () =>(
+  const handleClick = () =>(
     setChatOpen(!chatOpen)
   ) 
    
@@ -33,17 +35,18 @@ function DashBoard() {
 
 
 
-            <button
-        className="bg-orange text-white md:w-[77px] w-[57px] md:h-[77px] h-[57px] rounded-full inline-flex justify-center items-center bottom-4 right-4 fixed hover:cursor-pointer font-bold text-[55px] font-white font-onest z-[9999]"
-        onClick={handleChat}>
-      
-        {chatOpen ? <IoClose /> : "C"}
-      </button>
-
-      <div className="fixed top-0 right-4">{chatOpen ? <ChatBox /> : null}</div>
+            
     
 </DashContainer>  
-   
+<Button
+      className='rounded-full text-xl'  
+        
+        onClick={handleClick}>
+      
+        {chatOpen ? <IoClose /> : "C"}
+      </Button>
+
+      <div  className="fixed bottom-0 right-4">{chatOpen ? <ChatBox /> : null}</div>
     </section>
   )
 }
