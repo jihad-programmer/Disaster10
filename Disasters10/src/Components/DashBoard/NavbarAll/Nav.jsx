@@ -13,7 +13,7 @@ const toggleMenu = ()=> {
 }
 
   return (
-    <nav className='w-full'>
+    <nav>
     
     <DashContainer className='py-4 font-onest space-y-5 bg-[#E4E4E780] '>
      <div className=' flex justify-around items-center gap-[15px]'>
@@ -69,13 +69,13 @@ const toggleMenu = ()=> {
                  
      </div>
 
-     <NavTitle P='Welcome Back' H='Dashboard'/>
+    
 
 
     </DashContainer>
     {isMenuOpen && <MobileMenu Toggle={toggleMenu}/>}
 
-   
+    
     <Outlet/>
     </nav>
     
