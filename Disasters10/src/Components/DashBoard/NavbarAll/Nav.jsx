@@ -15,13 +15,13 @@ const toggleMenu = ()=> {
   return (
     <nav>
     
-    <DashContainer className='py-4 font-onest space-y-5 bg-[#E4E4E780] '>
-     <div className=' flex justify-around items-center gap-[15px]'>
+    <DashContainer className='py-4 font-onest space-y-5  bg-[#E4E4E780] '>
+     <div className='flex justify-around items-center gap-[15px]'>
      <div className='w-[131px] h-[36px]'>
             <img src="/Logo.png" alt="" className='w-fit'/>
         </div>
 
-        <div className='W-[574px] h-[18px] hidden lg:flex justify-around items-center gap-[35px] font-[400] text-secondary'>
+        <div className=' h-[18px] hidden lg:flex justify-around items-center gap-[35px] font-[400] text-secondary'>
                  <NavLink to="/DashBoard">Dashboard</NavLink> 
                <NavLink to="/Incident">Incidents</NavLink>
                <NavLink to="/Locations">Locations</NavLink> 

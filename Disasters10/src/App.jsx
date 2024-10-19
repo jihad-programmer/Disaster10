@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import FirstPage from './Components/Incidents/FirstPage'
 import SecondPage from './Components/Incidents/SecondPage'
 import ThirdPage from './Components/Incidents/ThirdPage'
+import LastPage from './Components/Incidents/LastPage'
 function App() {
  
 
@@ -25,6 +26,8 @@ function App() {
          <Route path='/SecondPage' element={ <SecondPage/> }/>
        
          <Route path='/ThirdPage' element={ <ThirdPage/> }/>
+
+         <Route path='/LastPage' element={ <LastPage/> }/>
          
      </Routes>
  
