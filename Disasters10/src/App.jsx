@@ -6,6 +6,7 @@ import Nav from './Components/DashBoard/NavbarAll/Nav'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import FirstPage from './Components/Incidents/FirstPage'
 import SecondPage from './Components/Incidents/SecondPage'
+import ThirdPage from './Components/Incidents/ThirdPage'
 function App() {
  
 
@@ -22,7 +23,8 @@ function App() {
          <Route path='/FirstPage' element={ <FirstPage/> }/>
           
          <Route path='/SecondPage' element={ <SecondPage/> }/>
-      
+       
+         <Route path='/ThirdPage' element={ <ThirdPage/> }/>
          
      </Routes>
  
