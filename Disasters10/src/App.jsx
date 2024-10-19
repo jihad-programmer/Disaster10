@@ -1,13 +1,14 @@
 import './App.css'
 import DashBoard from './Components/DashBoard/NavbarAll/DashBoard'
 import Incident from './Components/DashBoard/NavbarAll/Incident'
-import Locations from './Components/DashBoard/NavbarAll/Locations'
+
 import Nav from './Components/DashBoard/NavbarAll/Nav'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import FirstPage from './Components/Incidents/FirstPage'
 import SecondPage from './Components/Incidents/SecondPage'
 import ThirdPage from './Components/Incidents/ThirdPage'
 import LastPage from './Components/Incidents/LastPage'
+import Locations from './Components/Locations/Locations'
 function App() {
  
 
@@ -28,6 +29,10 @@ function App() {
          <Route path='/ThirdPage' element={ <ThirdPage/> }/>
 
          <Route path='/LastPage' element={ <LastPage/> }/>
+
+         <Route path='/Locations' element={ <Locations/> }/>
+
+
          
      </Routes>
  
