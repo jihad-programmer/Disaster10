@@ -51,24 +51,19 @@ function Locations() {
     </div>
 
     {/* card */}
-<div className='flex gap-4 h-[500.5px]'>
-
-         
-         
+<div className='grid  md:flex flex-wrap gap-4 h-[500.5px]'>
+    
 {LocationPageData.map((data,i)=> (
    <Card key={i} {...data}/>
 ))}
 
-    
     </div>
 
-
-    
-
-   
-   
-
   </div>
+
+  {/* Location section end */}
+
+
 
 
       </div>

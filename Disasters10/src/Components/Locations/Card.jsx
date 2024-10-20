@@ -14,7 +14,8 @@ function Card({img,title,des,money}) {
                   <p className='text-[12px] text-secondary font-[400] font-onest'>{des}</p>
                   <p className='text-[14px] text-primary font-bold font-onest'>{money}</p>
               </div>
-          </div></>
+          </div>
+          </>
   )
 }
 
