@@ -27,7 +27,7 @@ const toggleMenu = ()=> {
                <NavLink to="/Locations">Locations</NavLink> 
                  <NavLink to="/Activities">Activities</NavLink> 
                  <NavLink to="/Documents">Documents</NavLink> 
-                 <NavLink to="/Cypher AI">Cypher AI</NavLink> 
+                 <NavLink to="/CypherAI">Cypher AI</NavLink> 
         </div>        
 
 

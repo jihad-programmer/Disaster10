@@ -9,6 +9,9 @@ import SecondPage from './Components/Incidents/SecondPage'
 import ThirdPage from './Components/Incidents/ThirdPage'
 import LastPage from './Components/Incidents/LastPage'
 import Locations from './Components/Locations/Locations'
+import Activities from './Components/DashBoard/NavbarAll/Activities'
+import Documents from './Components/DashBoard/NavbarAll/Documents'
+import CypherAI from './Components/DashBoard/NavbarAll/CypherAI'
 function App() {
  
 
@@ -32,9 +35,14 @@ function App() {
 
          <Route path='/Locations' element={ <Locations/> }/>
 
-
+         <Route path='/Activities' element={ <Activities/> }/>
          
+         <Route path='/Documents' element={ <Documents/> }/>
+
+         <Route path='/CypherAI' element={ <CypherAI/> }/>
      </Routes>
+
+     
  
    </BrowserRouter>
 
