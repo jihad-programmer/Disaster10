@@ -7,10 +7,10 @@ function Locations() {
 
     <NavTitle P='Incidents - DR-4699 March 2023 Severe Storms' H='DR-4699 March 2023 Severe Storms' B='+New Location'/>
 
-    <div className='w-[100%] flex'>
+    <div className='w-[100%] grid md:flex'>
 
-      <div className='w-[50%] h-[1582.5px] space-y-10 m-5 p-5 bg-slate-200'>
-           <div className='w-[428px] h-[123px] space-y-[45px]'>
+      <div className='md:w-[50%] w-fit h-[1582.5px] space-y-10 m-5 p-5 bg-slate-200'>
+           <div className='w-[] h-[123px] space-y-[45px]'>
                <div className='h-[39px] flex gap-2'>
                   <div>
                     <img src="/LO.png" alt="" />
