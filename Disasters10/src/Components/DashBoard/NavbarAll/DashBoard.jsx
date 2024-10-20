@@ -38,15 +38,7 @@ function DashBoard() {
             
     
 </DashContainer>  
-<Button
-      className='rounded-full text-xl'  
-        
-        onClick={handleClick}>
-      
-        {chatOpen ? <IoClose /> : "C"}
-      </Button>
 
-      <div  className="fixed bottom-0 right-4">{chatOpen ? <ChatBox /> : null}</div>
     </section>
   )
 }
