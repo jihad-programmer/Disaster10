@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card({image,Title,Des,Money}) {
   return (
-    <div className='w-[337px] h-[306px]'>
+    <div className='w-fit h-[306px]'>
          <div className='w-[306px] h-[253px]'>
           <img src={image} alt="" />
          </div>

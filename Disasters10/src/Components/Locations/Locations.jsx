@@ -1,6 +1,7 @@
 import React from 'react'
 import NavTitle from '../DashBoard/NavbarAll/NavTitle'
-
+import Card from './Card'
+import { LocationPageData } from '../../lib/Db'
 function Locations() {
   return (
     <>
@@ -9,9 +10,9 @@ function Locations() {
 
     <div className='w-[100%] grid md:flex gap-8 md:gap-[60px] lg:gap-[94px]'>
    
-      <div className='md:w-[50%] w-fit h-[1582.5px] space-y-10 m-5 p-5 bg-slate-200'>
+      <div className='md:w-[50%] w-fit h-[1582.5px] space-y-10 m-5 p-5 bg-slate-300'>
          {/* First section start */}
-           <div className='w-[] h-[123px] space-y-[45px]'>
+           <div className=' h-[123px] space-y-[45px]'>
                <div className='h-[39px] flex gap-2'>
                   <div>
                     <img src="/LO.png" alt="" />
@@ -32,15 +33,43 @@ function Locations() {
                </div>
            </div>
              {/* First section End */}
-         
+         <div className='border border-[#E4E4E7]'></div>
          {/* Description section */}
 
          <div className='w-fit h-fit md:h-[85px] lg:h-[102px]'>
                 <h1 className='font-bold text-[14px] font-onest text-[#000000]'>Description</h1>
                 <p className='font-[400] text-[16px] text-[#71717A] font-onest'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werho</p>
          </div>
+  {/* Description section end */}
+  <div className='border border-[#E4E4E7]'></div>
+
+  {/* Locations section Start */}
+  <div className='h-fit md:h-[525.5px] space-y-3'>
+    <div className='flex justify-between'>
+    <p className='text-[14px] text-[#000000] font-[400] font-onest'>Locations</p>
+         <p className='text-[14px] text-[#A1A1AA] font-[400] font-onest underline'>See all</p>
+    </div>
+
+    {/* card */}
+<div className='flex gap-4 h-[500.5px]'>
 
          
+         
+{LocationPageData.map((data,i)=> (
+   <Card key={i} {...data}/>
+))}
+
+    
+    </div>
+
+
+    
+
+   
+   
+
+  </div>
+
 
       </div>
     

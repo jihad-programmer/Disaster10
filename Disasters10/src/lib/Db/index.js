@@ -129,3 +129,24 @@ export const SecondPageData = [
         text: "Wildfire"
       },
 ]
+
+export const LocationPageData =[
+  {
+    img: "/bg1.png",
+    title: "Whitechapel Rd.",
+    des: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00"
+  }, 
+  {
+    img: "/bg2.png",
+    title: "Whitechapel Rd.",
+    des: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00"
+  },
+  {
+    img: "/bg1.png",
+    title: "Whitechapel Rd.",
+    des: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00"
+  },
+]
