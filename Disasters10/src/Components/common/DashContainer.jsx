@@ -1,5 +1,5 @@
 import React from 'react'
-import { cn } from '../../lib/utilis'
+import { cn } from '../../lib/Utilis/index'
 function DashContainer({children,className}) {
   return (
     <div className={cn('w-full  max-w-screen-xl mx-auto px-2.5 py-3.5' , className)}>
