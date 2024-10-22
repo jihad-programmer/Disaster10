@@ -1,5 +1,5 @@
 import React, { Children } from 'react'
-import { cn } from '../../lib/utilis/index'
+import { cn } from '../../lib/Utilis/index'
 
 function Button({children,className}) {
   return (
